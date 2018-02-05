@@ -5,12 +5,18 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 // Create an instance of express for app
+
+// working URLs  
+// https://versed-knee.glitch.me/dateValues/1450137600
+// https://versed-knee.glitch.me/dateValues/December%2015,%202015
+
 var app = module.exports = express();
+app.use(express.static('views'));
 app.use(bodyParser.json());
 app.use(cors());
 
 // set up get request, return JSON that formats natural and unix date
-app.get('/dateValues/:dateVal', function(req, res, next) {
+app.get('/:dateVal', function(req, res, next) {
     // get request for data
     var dateVal = req.params.dateVal;
     //options for formatting date in natural language
@@ -35,10 +41,11 @@ app.get('/dateValues/:dateVal', function(req, res, next) {
 
 
     res.json({unix: unixDate, natural: naturalDate});
+    
 });
 
 
 
 app.listen(8080, function(){
-    console.log('It is working!');
+    console.log('It is working!');    
 });

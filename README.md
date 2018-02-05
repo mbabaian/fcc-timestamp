@@ -1,5 +1,7 @@
-
 ## [freeCodeCamp's Basejump: Timestamp Microservice](https://www.freecodecamp.org/challenges/timestamp-microservice)
+
+### Objective 
+Build a full stack JavaScript app that is functionally similar to this: https://timestamp-ms.herokuapp.com/ and deploy it to Glitch.
 
 ### User Stories
 - I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).

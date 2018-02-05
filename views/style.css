@@ -1,0 +1,15 @@
+.jumbotron {
+  background-color: #1b8432;
+  color: white;
+  padding-left: 20px;
+}
+
+
+h2, h3, p {
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+}
